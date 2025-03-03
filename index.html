@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h2 style="color: #ed8f08;">Student Registration Form</h2>
+    <hr>
+    <h3>Please Enter Relavent Information</h3>
+
+    <form action="form.Php">
+        <small>Mandatory Field *</small>
+        <div>
+            <div>
+                <label>Institute District *</label>
+            </div>
+            <select>
+                <option value="" disabled selected>--Select One--</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Narayanganj">Narayanganj</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <label>Course *</label>
+            </div>
+            <select>
+                <option disabled selected>--Select One--</option>
+                <option value="Web Design & Development">Web Design & Development</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Digital Marketing">Digital Marketing</option> 
+            </select>
+        </div>
+        <div>
+            <div>
+                <label for="Student Name">Student Name *</label>
+            </div>
+            <input type="text" id="Student Name" >
+        </div>
+        <div>
+            <div>
+                <label for="Father Name">Father Name *</label>
+            </div>
+            <input type="text" id="Father Name">
+        </div>
+        <div>
+            <div>
+                <label for="Mother Name">Mother Name *</label>
+            </div>
+            <input type="text" id="Mother Name">
+        </div>
+
+        <div>
+            <div>
+                <label for="Birth">Date of Birth *</label>
+            </div>
+            <input type="date" id="Birth">
+        </div>
+        <div>
+            <div>
+                <label>Gender *</label>
+            </div>
+            <label><input type="radio" name="gender" /> Male
+                <label><input type="radio" name="gender" /> Female
+        </div>
+
+        <div>
+            <label>"Did you participate in 15 days liiteracy training of LEDP? (Only for Female)"</label>
+            <div>
+                <label><input type="radio" name="Female">Yes</label>
+                <label><input type="radio" name="Female">NO</label>
+            </div>
+        </div>
+        <div>
+            <label>Physically Handicapped *</label>
+            <div>
+                <label>
+                    <input type="radio" name="Handicapped">No
+                </label>
+                <label><input type="radio" name="Handicapped">Yes</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="email">Email *</label>
+            <div>
+                <input id="email" type="email" placeholder="example@mail.com">
+            </div>
+        </div>
+
+        <div>
+            <label for="Phone">Phone (11 Digits) *</label>
+            <div>
+                <input id="Phone" type="text" placeholder="+088">
+            </div>
+        </div>
+    </form>
+
+    <!-- form 2 -->
+    <form>
+
+        <div>
+            <label>Identification Type *</label>
+            <div>
+                <select name="" id="">
+                    <option value="Select One" selected disabled>--Select One--</option>
+                    <option value="National ID">National ID</option>
+                    <option value="Brith Certificate">Brith Certificate</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label for="number">Indentification No *</label>
+            <div>
+                <input type="text" id="number" placeholder="10 or 17 digits">
+            </div>
+        </div>
+
+        <!-- form 2 13 digit -->
+
+        <div>
+            <label>Home District *</label>
+            <div>
+                <select>
+                    <option value="Select One" disabled selected>--Select One--</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Chittagong">Chittagong</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label>Upazilla *</label>
+            <div>
+                <select>
+                    <option value="Select One" selected disabled>--Select One--</option>
+                    <option value="Upazilla 1">Upazilla 1</option>
+                    <option value="Upazilla 2">Upazilla 2</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label for="village">Village/House No./Road No./Other Alternative *</label>
+            <div>
+                <input type="text" id="village">
+            </div>
+        </div>
+        <div>
+            <label for="post">Post Office *</label>
+            <div>
+                <input type="text" id="post">
+            </div>
+        </div>
+
+        <div>
+            <label>Educational Qualification *</label>
+            <div>
+                <select>
+                    <option value="Select One" selected disabled>--Select One--</option>
+                    <option value="jHigher Secondary">jHigher Secondary</option>
+                    <option value="Bachelor">Bachelor</option>
+                    <option value="Master">Master</option>
+                    <option value="PhD">Phd</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label>Do you have any computer? *</label>
+            <div>
+                <label><input type="radio" name="radio">Yes</label>
+                <label><input type="radio" name="radio">No</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Photograph *</label>
+            <div>
+                <input type="file">
+            </div>
+        </div>
+        <div>
+            <label>Signature *</label>
+            <div>
+                <input type="file">
+            </div>
+        </div>
+        <br>
+        <div>
+            <button>Submit Data</button>
+            <input type="reset" value="reset">
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>
